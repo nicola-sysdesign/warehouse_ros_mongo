@@ -87,7 +87,7 @@ target_link_libraries(warehouse_ros_mongo
   ${catkin_LIBRARIES} ${Boost_LIBRARIES} ${OPENSSL_LIBRARIES} ${MongoDB_LIBRARIES})
 
 
-if(CATKIN_ENABLE_TESTING)
+if (CATKIN_ENABLE_TESTING)
   add_executable(test_warehouse_ros_mongo_cpp test/test_warehouse_ros_mongo.cpp)
   target_link_libraries(test_warehouse_ros_mongo_cpp warehouse_ros_mongo ${GTEST_LIBRARIES})
 
